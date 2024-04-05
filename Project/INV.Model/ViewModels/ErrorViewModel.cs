@@ -1,4 +1,4 @@
-namespace INV.Models
+namespace INV.Model.ViewModels
 {
     public class ErrorViewModel
     {

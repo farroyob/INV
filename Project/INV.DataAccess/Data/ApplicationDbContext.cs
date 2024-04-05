@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace INV.Data
+namespace INV.DataAccess
 {
     public class ApplicationDbContext : IdentityDbContext
     {
