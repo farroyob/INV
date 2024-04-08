@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace INV.Model.ViewModels
 {
@@ -11,10 +6,11 @@ namespace INV.Model.ViewModels
     {
         [Key]
         public int Id { get; set; }
-
         [Required(ErrorMessage = "Name is required")]
-        [MaxLength(100, ErrorMessage = "Name can't be more than {1} characters")]
+        [MaxLength(100, ErrorMessage = "Name can't be more than {0} characters")]
         public string Name { get; set; } = string.Empty;
+        [Required(ErrorMessage = "Description is required")]
+        [MaxLength(255, ErrorMessage = "Name can't be more than {0} characters")]
         public string Description { get; set; } = string.Empty;
         public bool IsActive { get; set; }
     }
